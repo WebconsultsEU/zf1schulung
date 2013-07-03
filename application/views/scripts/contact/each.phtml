@@ -1,0 +1,10 @@
+<?php
+
+echo '<form action="'.$this->url().'" method="POST">';
+foreach($this->form->getElements() as $element):
+//var_dump($element);    
+echo $element->render();
+
+endforeach;
+echo "</form>";
+

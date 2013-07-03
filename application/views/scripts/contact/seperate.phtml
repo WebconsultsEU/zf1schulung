@@ -1,0 +1,11 @@
+<?php
+
+echo '<form action="'.$this->url().'" method="POST">'; ?>
+
+            <?=$this->formLabel('name', 'Name')?><br /> <?=$this->form->getElement('name')->renderViewHelper() ;?><br />                
+            <?=$this->formLabel('email', 'Email')?><br /> <?=$this->form->getElement('email')->renderViewHelper() ;?><br />
+            <?=$this->formLabel('message', 'Your Message')?><br /> <?=$this->form->getElement('message')->render() ;?><br />    
+            
+            <?=$this->form->getElement('submit')->renderViewHelper() ;?><br />
+echo "</form>";
+

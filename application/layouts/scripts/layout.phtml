@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+   <?php  $this->headLink()->appendStylesheet('/css/bootstrap.min.css') ?>
+   <?php  $this->headLink()->appendStylesheet('/css/myOwn.min.css') ?>
+   <?php  $this->headScript()->appendFile('js/bootstrap.min.js') ?>
+   <?php  $this->headScript()->appendFile('http://code.jquery.com/jquery.js')?>
+      
+  <?php echo $this->headScript() ?>
+  <?php echo $this->headStyle() ?>
+  <?php echo $this->headTitle() ?>
+
+
+</head> 
+<body>
+    <h1>ZF Global Header</h1>
+        <?php echo $this->layout()->content ?>
+</body>
+</html>
